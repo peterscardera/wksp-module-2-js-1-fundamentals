@@ -181,6 +181,14 @@ Write a program that output all of the numbers from 0 to 25
 ```js
 // code here
 
+let answer = []
+for (let i = 0; i <= 25 ;i++){
+    answer += i
+}
+
+console.log(answer)
+
+
 ```
 
 ---

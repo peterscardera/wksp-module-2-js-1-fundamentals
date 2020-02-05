@@ -44,7 +44,7 @@ _Expressions are the language equivalent to phrases._
 ```js
 // Example
 let allegiance = '';
-if (forceUseGood === true) {
+if (forceUseGood === true) { /// this is the expression the " forceUsGOod === true)
     allegiance = 'jedi'
 } else {
     allegiance = 'dark side'

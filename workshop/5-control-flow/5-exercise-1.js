@@ -9,7 +9,8 @@
 
 // It is supposed to print to the console the numbers 1, 2, 3, 4, 5.
 
-for (let number = 2; number < 5; number ++) {
-    
-    console.log(number);
+let array = [];
+for (let i = 0; i < 5; i++) {
+    array.push(i)
 }
+

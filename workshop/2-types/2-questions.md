@@ -4,48 +4,49 @@
 
 1. ( ) "I am a "Horse""
 2. ( ) "I 'prefer' ducks'
-3. ( ) 'Yes, duck is nice'
-4. ( ) "Ah, but I\'m vegan!"
-5. ( ) 'You'll eat salad then'
-6. ( ) 'Yes I\'ll eat salad'
-7. ( ) "I'm happy to hear that!"
+3. (x ) 'Yes, duck is nice'
+4. (x ) "Ah, but I\'m vegan!"
+5. (x ) 'You'll eat salad then'
+6. (x ) 'Yes I\'ll eat salad'
+7. (x) "I'm happy to hear that!"
 8. ( ) "\"Happy to hear " + 'that" ' + "he says!"
-9. ( ) “Hello world!”
+9. ( x) “Hello world!”
 
 
 ## Question 2: Rewrite below all of the strings that are not valid, and correct them to make them valid. 
 
-
-
+1. ( ) "I am a Horse"
+2. ( ) 'I prefer ducks'
+8. ( ) "\"Happy to hear \" + \'that\' + he says!"
 ## Question 3: Which of the following expressions are true? Add an 'x' between the ( ) to indicate that it's true.
 
 1. ( ) 7 == 2
-2. ( ) 7 == 7
+2. ( x) 7 == 7
 3. ( ) 7 == '7'
-4. ( ) 7 != 0
-5. ( ) 7 !== '7'
+4. (x ) 7 != 0
+5. (x ) 7 !== '7'
 6. ( ) 7 != '7'
-7. ( ) 7 != 7
+7. ( x) 7 != 7
 
 
 ## Question 4: Which of the following expressions is/are truthy?
 
-1. ( ) !0
+1. ( x) !0
 2. ( ) !1
-3. ( ) -1
+3. ( x) -1
 4. ( ) !"hello!"
 5. ( ) null
 6. ( ) !undefined
-7. ( ) !NaN
+7. (x) !NaN
 
 
 ## Question 5: Which of the following are valid objects?
 
-1. ( ) {}
-2. ( ) { 'hello' }
-3. ( ) { name: 'I am fruit' }
-4. ( ) {'brand-name': 'Dior' }
-5. ( ) { brand-name: 'Channel' }
+1. (x ) {}
+2. ( x) { 'hello' }
+3. ( x) { name: 'I am fruit' }
+4. ( x) {'brand-name': 'Dior' }
+5. ( x) { brand-name: 'Channel' }
 6. ( ) { cool_name: 'bob' + ' Dylan', age: 25 }
 
 

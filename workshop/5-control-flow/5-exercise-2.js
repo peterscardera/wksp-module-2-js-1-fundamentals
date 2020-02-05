@@ -8,7 +8,8 @@
 // Fix this program
 // It should output the squares of all numbers between 0 and 12
 
-for (let number = 0; number < 12; number ++) {
-    
-    console.log('the square of ', number, ' is ', square);
-}
+for (let i = 1; i < 12; i++) {
+    console.log(i * i);
+  }
+
+  //or use Math.sqrt

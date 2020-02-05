@@ -159,14 +159,14 @@ Of course comparison operators and logical operators are usually combined in an 
 ```js
 // Look at these expressions below and determine whether they evaluate to true or false
 
-1. true || false
-2. false && false
-3. 1 < 2 && 2 > 1
-4. 31 < 13 || 1 < 2 && 3 > 1
-5. 400 <= 400 && 399 < 400 && (30 > 31 || 400 > 31)
-6. true && false && false || false && true
-7. true && false || true || false
-8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1
+1. true || false // True (as soon its see true an OR will be true)
+2. false && false  //False
+3. 1 < 2 && 2 > 1 //true
+4. 31 < 13 || 1 < 2 && 3 > 1 //true
+5. 400 <= 400 && 399 < 400 && (30 > 31 || 400 > 31) // true
+6. true && false && false || false && true // false 
+7. true && false || true || false //true
+8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1 //true
 ```
 
 ---
@@ -200,7 +200,7 @@ The following values are ALWAYS _falsy_:
 - '' or "" (empty string)
 - `null`
 - `undefined`
-- `NaN`
+- `NaN` //never equal to something
 
 EVERYTHING else is _truthy_. Everything else.
 
@@ -244,7 +244,7 @@ let anArrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 1. anArrayOfNumbers[0]
 2. anArrayOfNumbers[5]
 3. anArrayOfNumbers[9]
-4. anArrayOfNumbers[10]
+4. anArrayOfNumbers[10] //undefined
 ```
 
 ---
@@ -255,7 +255,7 @@ let anArrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // Example 2 - Given this array
 let anArrayOfNumbers = ['bacon', undefined, 900, true]
 
-1. How do we access the value 900?
+1. How do we access the value 900? //anArrayOfNumber[2]
 2. How do we access the value `true`?
 
 ```
@@ -277,10 +277,10 @@ let table = [
   [31,32,33,34,35,36]
 ]
 
-1. table[0][0]
-2. table[5][5]
-3. table[2][3]
-4. How would we access the value 27?
+1. table[0][0] //1
+2. table[5][5] //35
+3. table[2][3] //16
+4. How would we access the value 27?  // [4][2]
 ```
 
 ---
@@ -293,9 +293,9 @@ Given this data structure:
 let data = [0, [], [], [1,2,3, [4]]]
 ```
 
-1. How would you access the value `0`?
-2. How would you access the value `3`?
-3. How would you access the value `4`?
+1. How would you access the value `0`? // data 0 
+2. How would you access the value `3`? // data 3 2
+3. How would you access the value `4`? // data 3 3 0
 
 ---
 
@@ -323,7 +323,7 @@ Group the following items together according to their type:
 
 `'hello'`, `0`, `['mouse', 'cat', 'dog']`, `'cat'`, `false`,
 
-`null`, `7` `'42'`, `{product: 'cake', price: '50$'}`,
+`null`, `7`, `'42'`, `{product: 'cake', price: '50$'}`,
 
 `undefined`,` ['coconut', 24, 'banana']`, `-99`
 
@@ -345,7 +345,8 @@ Group the following items together according to their type:
 ```js
 { label: 'corn', price: 5.3 + '$' };
 { ISBN: 53532, isAvailable: true, author: 'Nakamoto' };
-
+//labe is a key
+//labe: "corn" is the property
 ```
 
 ---
@@ -361,6 +362,7 @@ Values in objects can be accessed with
 // Example
 let person = {name: 'Bob', age: 23};
 const otherPerson = {name: 'Joe', age: 31, height: '170cm'};
+// objects are not ordered! 
 
 ```
 
@@ -374,9 +376,9 @@ let person = {name: 'Bob', age: 23};
 let name = 'John';
 
 // What is the value of the following expressions?
-1. person.name
-2. person['name']
-3. person[name]
+1. person.name //bob
+2. person['name'] //bob
+3. person[name] //ERROR 
 
 ```
 
@@ -391,9 +393,9 @@ let person = {name: 'bob', age: 23};
 let key = 'name';
 
 // What is the value of the following expressions:
-1. person.key
-2. person['key']
-3. person[key]
+1. person.key // undefined ****
+2. person['key'] //undefine
+3. person[key] // bob
 
 ```
 

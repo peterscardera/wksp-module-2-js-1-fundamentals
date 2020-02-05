@@ -17,3 +17,19 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+
+
+let board = "";
+let evenRow = "#_#_#_#";
+let oddRow = "#_#_#_#";
+
+for ( let i = 0; i < 8; i++ ) {
+
+    if ( i%2 === 0 ) {
+        board += evenRow + '\n';
+    } else {
+
+    board += oddRow + '\n';
+    }
+}

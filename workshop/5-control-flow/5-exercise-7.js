@@ -22,3 +22,32 @@
 // Fizz
 // Buzz
 // ...
+
+for (let i = 1; i<=20; i++) {
+
+    if( i % 3 ===0 ) {
+        console.log("fiz")
+    }else if( i % 5 === 0) {
+        console.log("buzzz")
+    } else {
+        console.log(i)
+    }
+}
+
+
+
+
+/* this requires me to put a number in the argument each time for the test Not goof
+function fizzPrinter(num) {
+
+    for(let i = 1; i<= num; i++) {
+        if (i %3 === 0) {
+            return "fizzz"
+        } else if ( i %5 === 0) {
+            return "buzz"
+        }
+    }
+}
+
+console.log(fizzPrinter())
+*/
